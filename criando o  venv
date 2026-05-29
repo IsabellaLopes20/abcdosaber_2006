@@ -1,0 +1,52 @@
+para criar um repositoriano git, 
+
+1 - crie um repositorio no git
+2 - copie o endereço no git
+3 - shift + crtl + p
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+criando um venv
+crtl + shift + P
+escolher 
+Python enviroment -> venv -> versão do python
+
+para ativar o venv .\.venv\Scripts\activate
+
+para verificar se o projeto esta funcionando 
+python manage.py runserver
+
+se estiver tudo ok vá em Starting development server at http://127.0.0.1:8000/
+
+para alterar o horário e para passar para o portugês do brasil
+vá na pasta criada no caso aqui é abcdosaber no arquivo settings.py
+
+abra este arquivo e nas últimas linhas troque paraLANGUAGE_CODE = 'pt-br'
+
+TIME_ZONE = 'America/Sao_Paulo'
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+criando um arquivo gitignore
+va até o site gitignore.io digite pytho<enter> django<enter></enter>
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+python manage.py startapp <nome do projeto>
+irá criar as Pastas
+admin.py
+apps.py
+models.py
+tests.py
+views.py
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+criando o arquivo readme.md
+
+tutorial  https://docs.github.com/pt/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
+
+ativar o venv
+.\.venv\Scripts\activate
+instalando odjango
+pip install Django==4.2.18 
+
+para gravar as dependencias do projeto
+pip freeze > requeriments.txt
+
+criando um app
