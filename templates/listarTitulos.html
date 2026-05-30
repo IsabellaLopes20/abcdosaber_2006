@@ -8,15 +8,15 @@
 <!-- menu -->
     <div class="collapse navbar-collapse justify-content-end" id="mynavbar">
         <div class="navbar-nav">
-             <a href="../escola.html" class="nav-link">Início</a>
+             <a href="/" class="nav-link">Início</a>
                     <a href="cadastroTitulos.html" class="nav-link">Cadastrar</a>
-                    <a href="listarTitulos.html" class="nav-link">Listar</a>
+                    <a href="{% url 'titulo:listar' %}" class="nav-link">Listar</a>
                 </div>
             </div>
         </nav>
     </div>
 {% endblock %}
-< class="container m-2 mx-auto my-font-family">
+<class="container m-2 mx-auto my-font-family">
     <div class="row">
         <div class="col text-center m-0">
                 <h2 class="mt-2 mb-5 my-h2">Lista de Títulos</h2>
