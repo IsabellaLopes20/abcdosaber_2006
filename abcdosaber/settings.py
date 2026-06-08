@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'titulo.apps.TituloConfig',
     'aluno.apps.AlunoConfig',
     'instrutor.apps.InstrutorConfig',
-    'tipodeatividade.apps.TipodeatividadeConfig',
+    'tipoatividade.apps.TipoatividadeConfig',
     'turma.apps.TurmaConfig',
     'utilitarios.apps.UtilitariosConfig',
 ]
