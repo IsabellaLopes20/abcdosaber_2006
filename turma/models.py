@@ -41,7 +41,7 @@ class Turma(models.Model):
         Titulo,
         null = True,
         blank = True,
-        related_name = 'titulos',
+        related_name = 'turma',
         on_delete = models.SET_NULL,
         db_column = "codigoTitulo",
         help_text = "Informe o código do título"
