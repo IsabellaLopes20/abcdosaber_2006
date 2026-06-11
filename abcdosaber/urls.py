@@ -26,12 +26,14 @@ urlpatterns = [
     path('titulo/', include("titulo.urls")),
     
     path('turma/', include("turma.urls")),
-    # path('aluno/', include("aluno.urls")),
+    
+    path('aluno/', include("aluno.urls")),
+    
     path('instrutor/', include("instrutor.urls")),
     
     path('tipoatividade/', include("tipoatividade.urls")),
 
-    path('turma/', include("turma.urls")),
+    
     # path('utilitarios/', include("utilitarios.urls")),
     
     
