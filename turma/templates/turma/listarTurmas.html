@@ -53,6 +53,7 @@
                 <!-- cabecalho -->
                 <thead>
                     <!-- linhas -->
+                    
                     <tr>
                         <!-- colunas cabecalho -->
                         <th>Número</th>
@@ -65,43 +66,26 @@
                         <th>Titularidade</th>
                         <th>Aluno Monitor</th>
                     </tr>
+                   
                 </thead>
 
                 <!-- linhas -->
+               
                 <tbody>
+                    {%for turma in turmas%}
                     <tr>
-                        <td> 1 </td>
-                        <td> 10:00:00 </td>
-                        <td> 2 </td>
-                        <td> 01/03/2022 </td>
-                        <td> -- </td>
-                        <td> Programador Web </td>
-                        <td> Jefferson Gonçalves </td>
-                        <td> Professor Doutor </td>
-                        <td> Marcos Ferreira </td>
+                        <td> {{ turma.numero }} </td>
+                        <td>  {{ turma.horarioAula}} </td>
+                        <td>  {{ turma.duracaoAula }} </td>
+                        <td>  {{ turma.dataInicial }} </td>
+                        <td> {{ turma.dataFinal }} </td>
+                        <td> {{ turma.matriculaMonitor}} </td>
+                        <td>{{ turma.idInstrutor }} </td>
+                        <td>{{ turma.codigoTitulo }} </td>
+                       
                     </tr>
-                    <tr>
-                        <td> 2 </td>
-                        <td> 13:00:00 </td>
-                        <td> 4 </td>
-                        <td> 01/03/2022 </td>
-                        <td> -- </td>
-                        <td> Programador Web </td>
-                        <td> Jefferson Gonçalves </td>
-                        <td> Professor Doutor </td>
-                        <td> José Mauro </td>
-                    </tr>
-                    <tr>
-                        <td> 3 </td>
-                        <td> 18:00:00 </td>
-                        <td> 4 </td>
-                        <td> 01/03/2022 </td>
-                        <td> -- </td>
-                        <td> Programador Web </td>
-                        <td> Jefferson Gonçalves </td>
-                        <td> Professor Doutor </td>
-                        <td> Hian Ferreira </td>
-                    </tr>
+                    {%endfor%}
+                   
                 </tbody>
             </table>
 

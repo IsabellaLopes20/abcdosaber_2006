@@ -54,26 +54,22 @@
                 <!-- cabecalho -->
                 <thead>
                     <!-- linhas -->
+              
                     <tr>
                         <!-- colunas cabecalho -->
                         <th>Código</th>
                         <th>Descrição</th>
                     </tr>
+                    
                 </thead>
 
                 <!-- linhas -->
+                {%for titulo in titulos%}
                 <tr>
-                    <td> 1 </td>
-                    <td> Professor Doutor </td>
+                    <td> {{ titulo.codigo }}</td>
+                    <td> {{ titulo.descricao }} </td>
                 </tr>
-                <tr>
-                    <td> 2 </td>
-                    <td> Professor Sabe-Tudo </td>
-                </tr>
-                <tr>
-                    <td> 3 </td>
-                    <td> Professor Estagiário </td>
-                </tr>
+                {%endfor%}
 
             </table>
 

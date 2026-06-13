@@ -60,33 +60,17 @@
                 </thead>
 
                 <!-- linhas -->
+                {%for instrutor in instrutores %}
                 <tr>
-                    <td> 1 </td>
-                    <td> Jefferson Gonçalves </td>
-                    <td> 099998888 </td>
-                    <td> 05/10/1978 </td>
-                    <td> 021 </td>
-                    <td> 897698512 </td>
-                    <td> Professor Doutor </td>
+                    <td> {{ instrutor.id }} </td>
+                    <td>  {{ instrutor.rg }} </td>
+                    <td>  {{ instrutor.nome }} </td>
+                    <td>  {{ instrutor.dataNascimento}}</td>
+                    <td>  {{ instrutor.telefone }} </td>
+                    <td>  {{ instrutor.ddd}} </td>
+                    <td>  {{ instrutor.codigoTitulo }} </td>
                 </tr>
-                <tr>
-                    <td> 2 </td>
-                    <td> Maria Joaquina </td>
-                    <td> 125487966 </td>
-                    <td> 10/01/1987 </td>
-                    <td> 021 </td>
-                    <td> 12322211 </td>
-                    <td> Professor Doutor </td>
-                </tr>
-                <tr>
-                    <td> 3 </td>
-                    <td> Juliana Fergusson </td>
-                    <td> 874895692 </td>
-                    <td> 15/11/1968 </td>
-                    <td> 022 </td>
-                    <td> 87474774 </td>
-                    <td> Professor Sabe-Tudo </td>
-                </tr>
+                {%endfor%}
             </table>
 
         </div>
