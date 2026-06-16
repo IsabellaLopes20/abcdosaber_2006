@@ -17,15 +17,13 @@ def cadastro(request):
     return render(request, 'titulo/cadastroTitulos.html')
 
 def excluir(request, codigoTitulo):
-    try:
-    
-     titulo = Titulo.objects.get(pk=codigoTitulo)
-     titulo.delete()
+    try: 
+        titulo = Titulo.objects.get(pk=codigoTitulo)
+        titulo.delete()
     except Titulo.DoesNotExist:
-     pass
+        pass
     
     return redirect('titulo:listar')
-
 
 
 
